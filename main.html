@@ -1,34 +1,74 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Navbar and Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        video {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-
 <body>
-	<nav>
-		<ul>
-           <li> <a href="#home">Home</a></li>
-           <li> <a href="#about">About us</a></li>
-           <li> <a href="#contact">Contact us</a></li>
-		</ul>
-	</nav>
-	<h1>3 random videos</h1>
-	<video  controls>
-		<source src="https://youtu.be/pgTBc_x069Y?si=exKujaNpUJI8UqyK" type="video.mp4">
-	</video>
-	<video controls>
-		<source src="https://youtu.be/FO_CmPuzJSs?si=a1IqbWzpi6m_ZUV5" type="video.mp4">
-	</video>
-	<video controls>
-		<source src="https://youtu.be/EtB-10Ux5C8?si=YH7XsSRhqtoenXM2" type="video.mp4">
-	</video>
-	
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Semantic Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Videos Section -->
+    <h2>3 Random Videos</h2>
+    <video width="640" height="360" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <video width="640" height="360" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <video width="640" height="360" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
 </body>
-
 </html>
